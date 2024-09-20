@@ -2,8 +2,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import CoursesNavigation from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";
-import Assignments from "../Assignments";
-import AssignmentEditor from "../Assignments/Editor";
+import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/Editor";
 
 export default function Courses() {
   return (

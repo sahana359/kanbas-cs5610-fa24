@@ -160,6 +160,7 @@ export default function Lab1() {
         <img
           id="wd-starship"
           width="400px"
+          alt = "Tesla Bot"
           src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1
 _Starship-gap2.jpg"
         />

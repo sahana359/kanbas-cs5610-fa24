@@ -10,7 +10,7 @@ export default function Dashboard() {
             className="wd-dashboard-course-link"
             to="/Kanbas/Courses/1234/Home"
           >
-            <img src="/images/reactjs.webp" width={200} />
+            <img src="/images/reactjs.webp" alt = "React Logo" width={200} />
             <div>
               <h5>CS1234 React JS</h5>
               <p className="wd-dashboard-course-title">
@@ -25,7 +25,7 @@ export default function Dashboard() {
             className="wd-dashboard-course-link"
             to="/Kanbas/Courses/1234/Home"
           >
-            <img src="/images/reactjs.webp" width={200} />
+            <img src="/images/reactjs.webp" alt = "React Logo" width={200} />
             <div>
               <h5>CS1234 React JS</h5>
               <p className="wd-dashboard-course-title">
@@ -40,7 +40,7 @@ export default function Dashboard() {
             className="wd-dashboard-course-link"
             to="/Kanbas/Courses/1234/Home"
           >
-            <img src="/images/reactjs.webp" width={200} />
+            <img src="/images/reactjs.webp" alt = "React Logo" width={200} />
             <div>
               <h5>CS1234 React JS</h5>
               <p className="wd-dashboard-course-title">

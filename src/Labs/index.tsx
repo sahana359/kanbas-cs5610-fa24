@@ -1,5 +1,5 @@
 import Lab1 from "./Lab1";
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import TOC from "./TOC";
 
 export default function Labs() {

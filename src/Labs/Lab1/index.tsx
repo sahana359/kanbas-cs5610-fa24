@@ -167,7 +167,7 @@ _Starship-gap2.jpg"
         <br />
         Loading a local image:
         <br />
-        <img id="wd-teslabot" src="images/Optimus_Tesla.jpg" height="200px" />
+        <img id="wd-teslabot" alt = "Tesla Bot" src="images/Optimus_Tesla.jpg" height="200px" />
       </div>
 
       <div id="wd-forms">

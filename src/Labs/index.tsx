@@ -5,6 +5,11 @@ import TOC from "./TOC";
 export default function Labs() {
   return (
     <div id="wd-labs">
+      <h1>Sahana Rajashekara</h1>
+      <h2>Section 01</h2>
+      <a href="https://github.com/sahana359/kanbas-cs5610-fa24" id="wd-neu-link" target="_blank" rel="noreferrer">
+        GitHub Repository
+      </a>
       <h1>Labs</h1>
       <TOC />
       <Routes>

@@ -2,12 +2,20 @@ export default function AssignmentEditor() {
   return (
     <div id="wd-assignments-editor">
       <label htmlFor="wd-name">Assignment Name</label>
+      <br />
+      <br />
       <input id="wd-name" value="A1 - ENV + HTML" />
       <br />
       <br />
-      <textarea id="wd-description">
-        The assignment is available online Submit a link to the landing page of
+      <textarea id="wd-description" rows={10} cols={50}>
+        The assignment is available online. Submit a link to the landing page of
+        your Web application running on Netlify. The landing page should include
+        the following: Your full name and section, Links to each of the lab
+        assignments, Link to the Kanbas application, Links to all relevant
+        source code repositories. The Kanbas application should include a link
+        to navigate back to the landing page.
       </textarea>
+      <br />
       <br />
       <table>
         <tr>
@@ -18,6 +26,7 @@ export default function AssignmentEditor() {
             <input id="wd-points" value={100} />
           </td>
         </tr>
+        <br />
         <tr>
           <td align="right" valign="top">
             <label htmlFor="wd-assignment-group">Assignment Group</label>
@@ -33,6 +42,7 @@ export default function AssignmentEditor() {
             </select>
           </td>
         </tr>
+        <br />
         <tr>
           <td align="right" valign="top">
             <label htmlFor="wd-assignment-grade">Display Grade as</label>
@@ -44,6 +54,7 @@ export default function AssignmentEditor() {
             </select>
           </td>
         </tr>
+        <br />
         <tr>
           <td align="right" valign="top">
             <label htmlFor="wd-assignment-submission-type">
@@ -57,10 +68,12 @@ export default function AssignmentEditor() {
             </select>
           </td>
         </tr>
+        <br />
         <tr>
           <td align="right" valign="top"></td>
           <td>
-            <p>Online Entry Options</p>
+            <label>Online Entry Options</label>
+            <br />
             <input
               type="checkbox"
               name="check-online-options"
@@ -97,10 +110,23 @@ export default function AssignmentEditor() {
             <label htmlFor="wd-chkbox-fantasy">File Upload</label>
           </td>
         </tr>
+        <br />
+        <tr>
+          <td align="right" valign="top">
+            <label htmlFor="wd-assign">Assign</label>
+          </td>
+          <td>
+            <label htmlFor="wd-assign">Assign to</label>
+            <br />
+            <input id="wd-assign" value={"Everyone"} />
+          </td>
+        </tr>
+        <br />
         <tr>
           <td align="right" valign="top"></td>
           <td>
-            <p>Due</p>
+            <label>Due</label>
+            <br />
             <input
               type="date"
               id="wd-assignment-due"
@@ -108,10 +134,12 @@ export default function AssignmentEditor() {
             />
           </td>
         </tr>
+        <br />
         <tr>
           <td align="right" valign="top"></td>
           <td>
-            <p>Available from &nbsp; &nbsp; &nbsp; Until</p>
+            <label>Available from &nbsp; &nbsp; &nbsp; Until</label>
+            <br />
             <input
               type="date"
               id="wd-assignment-available-from"
@@ -123,6 +151,11 @@ export default function AssignmentEditor() {
               id="wd-assignment-until"
               defaultValue="2024-05-20"
             />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan={2}>
+            <hr />
           </td>
         </tr>
         <tr>

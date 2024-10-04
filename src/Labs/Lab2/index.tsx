@@ -1,8 +1,25 @@
 import "./index.css";
+import ForegroundColor from "./ForegroundColors";
+import BackgroundColors from "./BackgroundColors";
+import Borders from "./Borders";
+import Padding from "./Padding";
+import Corners from "./Corners";
+import Dimensions from "./Dimensions";
+import Positions from "./Positions";
+import Zindex from "./Zindex";
+import Float from "./Float";
+import GridLayout from "./GridLayout";
+import Flex from "./Flex";
+import ReactIconsSampler from "./ReactIcons"
+import "bootstrap/dist/css/bootstrap.min.css";
+import BootstrapGrids from "./BootstrapGrids";
+import ScreenSizeLabel from "./ScreenSizeLabel";
+import BootstrapTable from "./BootstrapTables";
+import BootstrapList from "./BootstrapList";
 
 export default function Lab2() {
   return (
-    <div id="wd-lab2">
+    <div className="container">
       <h2>Lab 2 - Cascading Style Sheets</h2>
       <h3>Styling with the STYLE attribute</h3>
       <p>
@@ -54,125 +71,22 @@ export default function Lab2() {
           </div>
         </div>
       </div>
-      <div id="wd-css-colors">
-        <h2>Colors</h2>
-        <h3 className="wd-fg-color-blue">Foreground color</h3>
-        <p className="wd-fg-color-red">
-          The text in this paragraph is red but
-          <span className="wd-fg-color-green"> this text is green</span>
-        </p>
-      </div>
-      <div id="wd-css-background-colors">
-        <h3 className="wd-bg-color-blue wd-fg-color-white">Background color</h3>
-        <p className="wd-bg-color-red wd-fg-color-black">
-          This background of this paragraph is red but
-          <span className="wd-bg-color-green wd-fg-color-white">
-            the background of this text is green and the foreground white
-          </span>
-        </p>
-      </div>
-      <div id="wd-css-borders">
-        <h2>Borders</h2>
-        <p className="wd-border-fat wd-border-red wd-border-solid">
-          Solid fat red border
-        </p>
-        <p className="wd-border-thin wd-border-blue wd-border-dashed">
-          Dashed thin blue border
-        </p>
-      </div>
-      <div id="wd-css-paddings">
-        <h2>Padding</h2>
-        <div
-          className="wd-padded-top-left wd-border-fat 
-      wd-border-red wd-border-solid 
-      wd-bg-color-yellow"
-        >
-          Padded top left
-        </div>
-
-        <div
-          className="wd-padded-bottom-right wd-border-fat 
-      wd-border-blue wd-border-solid 
-      wd-bg-color-yellow"
-        >
-          Padded bottom right
-        </div>
-
-        <div
-          className="wd-padding-fat wd-border-fat 
-      wd-border-yellow wd-border-solid 
-      wd-bg-color-blue wd-fg-color-white"
-        >
-          Padded all around
-        </div>
-      </div>
-      <div id="wd-css-margins">
-  <h2>Margins</h2>
-  <div
-    className="wd-margin-bottom 
-      wd-padded-top-left 
-      wd-border-fat wd-border-red 
-      wd-border-solid 
-      wd-bg-color-yellow">
-    Margin bottom
-  </div>
-  <div
-    className="wd-margin-right-left 
-      wd-padded-bottom-right 
-      wd-border-fat wd-border-blue 
-      wd-border-solid 
-      wd-bg-color-yellow">
-    Margin left right
-  </div>
-  <div
-    className="wd-margin-all-around 
-      wd-padding-fat wd-border-fat 
-      wd-border-yellow 
-      wd-border-solid 
-      wd-bg-color-blue 
-      wd-fg-color-white">
-    Margin all around
-  </div>
-</div>
-
-	<div id="wd-css-borders">
-  <h3>Rounded corners</h3>
-  <p className="wd-rounded-corners-top wd-border-thin 
-     wd-border-blue wd-border-solid wd-padding-fat">
-    Rounded corners on the top
-  </p>	 
-  <p className="wd-rounded-corners-bottom 
-     wd-border-thin wd-border-blue wd-border-solid 
-     wd-padding-fat">
-    Rounded corners at the bottom
-  </p>
-  <p className="wd-rounded-corners-all-around 
-     wd-border-thin wd-border-blue wd-border-solid 
-     wd-padding-fat">
-    Rounded corners all around
-  </p>
-  <p className="wd-rounded-corners-inline 
-     wd-border-thin wd-border-blue wd-border-solid 
-     wd-padding-fat">
-    Different rounded corners
-  </p>
-</div>
-<div id="wd-css-dimensions">
-  <h2>Dimension</h2>
-  <div>
-    <div className="wd-dimension-portrait wd-bg-color-yellow">
-      Portrait
-    </div>
-    <div className="wd-dimension-landscape wd-bg-color-blue
-                    wd-fg-color-white">
-      Landscape
-    </div>
-    <div className="wd-dimension-square wd-bg-color-red">
-      Square</div>
-  </div>
-</div>	 
- 
-
+      <ForegroundColor />
+      <BackgroundColors />
+      <Borders />
+      <Padding />
+      <Corners />
+      <Dimensions />
+      <Positions />
+      <Zindex />
+      <Float />
+      <GridLayout />
+      <Flex />
+      <ReactIconsSampler/>
+      <BootstrapGrids />
+      <ScreenSizeLabel />
+      <BootstrapTable />
+      <BootstrapList />
     </div>
   );
 }

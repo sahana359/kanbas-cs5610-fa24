@@ -18,5 +18,6 @@ export default function Kanbas() {
         </Routes>
       </div>
     </div>
+    
   );
 }

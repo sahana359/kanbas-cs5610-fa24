@@ -1,5 +1,4 @@
 import { AiOutlinePlus } from "react-icons/ai";
-import { CiSearch } from "react-icons/ci";
 export default function AssignmentControls() {
     return (
         <div id="wd-assignments-controls" className="text-nowrap">

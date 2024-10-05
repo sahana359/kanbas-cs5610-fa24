@@ -16,10 +16,14 @@ import BootstrapGrids from "./BootstrapGrids";
 import ScreenSizeLabel from "./ScreenSizeLabel";
 import BootstrapTable from "./BootstrapTables";
 import BootstrapList from "./BootstrapList";
+import BootstrapForms from "./BootstrapForms";
+import BootstrapNavigation from "./BootstrapNavigation";
 
 export default function Lab2() {
   return (
+    
     <div className="container">
+      <h1>hello </h1>
       <h2>Lab 2 - Cascading Style Sheets</h2>
       <h3>Styling with the STYLE attribute</h3>
       <p>
@@ -87,6 +91,8 @@ export default function Lab2() {
       <ScreenSizeLabel />
       <BootstrapTable />
       <BootstrapList />
+      <BootstrapForms />
+      <BootstrapNavigation />
     </div>
   );
 }

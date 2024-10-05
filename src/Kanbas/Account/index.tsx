@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router";
+import { Navigate, Route, Routes } from "react-router-dom";
 import AccountNavigation from "./Navigation";
 import Profile from "./Profile";
 import Signin from "./Signin";
@@ -6,7 +6,7 @@ import Signup from "./Signup";
 export default function Account() {
   return (
     <div id="wd-account-screen">
-      <h1>Account</h1>
+      <h2>Account</h2>
       <table>
         <tr>
           <td valign="top">

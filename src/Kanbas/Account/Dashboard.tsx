@@ -12,7 +12,7 @@ export default function Dashboard() {
                 className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/1234/Home"
               >
-                <img src="/images/neu.webp" width="100%" height={160} />
+                <img src="/images/neu.webp" alt = "neu" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS1234 React JS{" "}
@@ -32,7 +32,7 @@ export default function Dashboard() {
                 className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/1234/Home"
               >
-                <img src="/images/neu.webp" width="100%" height={160} />
+                <img src="/images/neu.webp" alt = "neu" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS5010 Programming in Design Paradigm
@@ -52,7 +52,7 @@ export default function Dashboard() {
                 className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/1234/Home"
               >
-                <img src="/images/neu.webp" width="100%" height={160} />
+                <img src="/images/neu.webp" alt = "neu" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS5800 Algorithms
@@ -72,7 +72,7 @@ export default function Dashboard() {
                 className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/1234/Home"
               >
-                <img src="/images/neu.webp" width="100%" height={160} />
+                <img src="/images/neu.webp" alt = "neu" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS5610 Web Development
@@ -92,7 +92,7 @@ export default function Dashboard() {
                 className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/1234/Home"
               >
-                <img src="/images/neu.webp" width="100%" height={160} />
+                <img src="/images/neu.webp" alt = "neu" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS6410 Machine Learning
@@ -112,7 +112,7 @@ export default function Dashboard() {
                 className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/1234/Home"
               >
-                <img src="/images/neu.webp" width="100%" height={160} />
+                <img src="/images/neu.webp" alt = "neu" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS6650 Building Scalable Distributed Systems
@@ -132,7 +132,7 @@ export default function Dashboard() {
                 className="wd-dashboard-course-link text-decoration-none text-dark"
                 to="/Kanbas/Courses/1234/Home"
               >
-                <img src="/images/neu.webp" width="100%" height={160} />
+                <img src="/images/neu.webp" alt = "neu" width="100%" height={160} />
                 <div className="card-body">
                   <h5 className="wd-dashboard-course-title card-title">
                     CS6220 Data Mining

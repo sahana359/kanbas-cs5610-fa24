@@ -5,7 +5,7 @@ export default function AssignmentEditor() {
     const assignments = db.assignments;
   return (
       <div className="wd-css-styling-forms container ">
-        {assignments.filter((assignment:any) => assignment._id == aid && assignment.course == cid)
+        {assignments.filter((assignment:any) => assignment._id === aid && assignment.course === cid)
         .map((assignment:any) => (
           <><div className="row mb-3">
                 <label htmlFor="wd-name" className="form-label col-sm-3 col-form-label">

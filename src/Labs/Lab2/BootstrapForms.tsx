@@ -1,4 +1,4 @@
-export default function ForegroundColor() {
+export default function BootstrapForms() {
   return (
     <div id="wd-css-styling-forms">
       <h2>Forms</h2>

@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import * as db from "./Database";
-import { useState } from "react";
 export default function Dashboard({ courses, course, setCourse, addNewCourse,
   deleteCourse, updateCourse }: {
   courses: any[]; course: any; setCourse: (course: any) => void;

@@ -8,28 +8,31 @@ import ObjectStateVariable from "./ObjectStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
 import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
+import ReduxExamples from "./ReduxExamples";
+import HelloRedux from "./ReduxExamples/HelloRedux";
 import StringStateVariables from "./StringStateVariables";
 
 const Lab4 = () => {
-    function sayHello() {
-        alert("Hello");
-    }
-    return(
-        <div>
-            <h2>Lab 4</h2>
-            <ClickEvent/>
-            <PassingDataOnEvent/>
-            <PassingFunctions theFunction={sayHello} />
-            <EventObject/>
-            <Counter/>
-            <BooleanStateVariables/>
-            <StringStateVariables/>
-            <DateStateVariable/>
-            <ObjectStateVariable/>
-            <ArrayStateVariable/>
-            <ParentStateComponent/>
-        </div>
-    );
-}
+  function sayHello() {
+    alert("Hello");
+  }
+  return (
+      <div>
+        <h2>Lab 4</h2>
+        <ClickEvent />
+        <PassingDataOnEvent />
+        <PassingFunctions theFunction={sayHello} />
+        <EventObject />
+        <Counter />
+        <BooleanStateVariables />
+        <StringStateVariables />
+        <DateStateVariable />
+        <ObjectStateVariable />
+        <ArrayStateVariable />
+        <ParentStateComponent />
+        <ReduxExamples />
+      </div>
+  );
+};
 
 export default Lab4;

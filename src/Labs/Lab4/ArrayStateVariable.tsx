@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "./ArrayStateVariable.css";
-
 export default function ArrayStateVariable() {
   const [array, setArray] = useState([1, 2, 3, 4, 5]);
   const addElement = () => {
@@ -13,11 +11,11 @@ export default function ArrayStateVariable() {
     <div id="wd-array-state-variables">
       <h2>Array State Variable</h2>
       <button className="btn btn-success" onClick={addElement}>Add Element</button>
-      <ul className="list-group">
+      <ul className="list-group me-5">
         {array.map((item, index) => (
           <li className="list-group-item" key={index}>
             {item}
-            <button className="btn btn-danger"
+            <button className="btn btn-danger m-3 float-end"
               onClick={() => deleteElement(index)}
               id="wd-delete-element-click"
             >

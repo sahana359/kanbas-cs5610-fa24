@@ -32,7 +32,7 @@ export default function AssignmentEditor() {
       (assignment: any) => assignment._id === aid && assignment.course === cid
     );
     if (selectedAssignment) setAssignment(selectedAssignment);
-  }, [cid, aid]);
+  }, [cid, aid, assignments]);
 
   const dispatch = useDispatch();
   return (

@@ -6,15 +6,17 @@ import GreenCheckmark from "./GreenCheckmark";
 import { IoAddOutline } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useParams } from "react-router";
-import * as db from "../../Database";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteAssignment } from "./reducer";
+import { FaTrash } from "react-icons/fa6";
 
 export default function Assignments() {
   const { cid } = useParams();
-  const assignment = db.assignments;
-
+  const {assignments} = useSelector((state: any) => state.assignmentReducer) || [];
+  const dispatch = useDispatch();
   return (
     <div id="wd-assignments">
-      <AssignmentControls />
+      <AssignmentControls/>
       <br />
       <br />
       <br />
@@ -40,7 +42,7 @@ export default function Assignments() {
             </div>
           </div>
           <ul className="wd-lessons list-group rounded-0">
-            {assignment
+            {assignments
               .filter((assignment: any) => assignment.course === cid)
               .map((assignment: any) => (
                 <li className="wd-lesson list-group-item p-3 ps-1 d-flex justify-content-between">
@@ -70,6 +72,7 @@ export default function Assignments() {
                     </p>
                   </div>
                   <div>
+                    <FaTrash className="text-danger me-2 mb-1" onClick={() => {dispatch(deleteAssignment(assignment._id))}}/>
                     <GreenCheckmark />
                     <button className="btn btn-lg btn-transparent me-2 float-end">
                       <IoEllipsisVertical className="fs-4" />
@@ -83,3 +86,4 @@ export default function Assignments() {
     </div>
   );
 }
+

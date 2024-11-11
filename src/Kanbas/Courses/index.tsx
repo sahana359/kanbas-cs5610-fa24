@@ -23,7 +23,6 @@ export default function Courses({ courses }: { courses: any[]; }) {
             <CoursesNavigation />
             </div>
     <div className="flex-fill">
-
             <Routes>
               <Route path="/" element={<Navigate to="Home" />} />
               <Route path="Home" element={<Home />} />

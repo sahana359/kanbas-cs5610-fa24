@@ -5,7 +5,7 @@ export default function Counter() {
   return (
     <div id="wd-counter-use-state">
       <h2>Counter: {count}</h2>
-      <button
+      <button className = "btn btn-success m-2"
         onClick={() => {
           setCount(count+1);
           console.log(count);
@@ -14,7 +14,7 @@ export default function Counter() {
       >
         Up
       </button>
-      <button
+      <button className="btn btn-danger m-2"
         onClick={() => {
           setCount(count-1);
           console.log(count);

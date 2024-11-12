@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import * as db from "../../Database";
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addAssignment } from "./reducer";
 export default function AssignmentEditor() {
   type assignmentType = {
@@ -16,7 +16,7 @@ export default function AssignmentEditor() {
   console.log(new Date().toISOString());
   const { cid, aid } = useParams();
   console.log(aid);
-  const assignments = db.assignments;
+  const {assignments} = useSelector((state: any) => state.assignmentReducer) || [];
   const [assignment, setAssignment] = useState<assignmentType>({
     _id: aid?.toString() || "",
     title: "New Assignment",
@@ -81,6 +81,12 @@ export default function AssignmentEditor() {
               id="wd-points"
               placeholder="100"
               value={assignment.points}
+              onChange={(e) =>
+                setAssignment({
+                  ...assignment,
+                  points: Number(e.target.value),
+                })
+              }
             />
           </div>
         </div>
@@ -227,7 +233,9 @@ export default function AssignmentEditor() {
                       new Date(assignment.due).toISOString().slice(0, 10) +
                       "T23:59"
                     }
-                    onChange={(e) => {setAssignment({...assignment, due: e.target.value})}}
+                    onChange={(e) => {
+                      setAssignment({ ...assignment, due: e.target.value });
+                    }}
                   />
                 </div>
               </div>
@@ -246,7 +254,12 @@ export default function AssignmentEditor() {
                       value={new Date(assignment.available)
                         .toISOString()
                         .slice(0, 16)}
-                        onChange={(e)=>{setAssignment({...assignment, available: e.target.value})}}
+                      onChange={(e) => {
+                        setAssignment({
+                          ...assignment,
+                          available: e.target.value,
+                        });
+                      }}
                     />
                   </div>
                   <div className="col-sm-6">
@@ -278,19 +291,13 @@ export default function AssignmentEditor() {
               Save
             </Link>
 
-            <button
-              id="wd-view-progress"
+            <Link
+              id="wd-assignment-cancel-link"
               className="btn btn-lg btn-secondary me-2 float-end"
-              type="button"
-              data-bs-toggle="button"
+              to={`/Kanbas/Courses/${cid}/Assignments`}
             >
-              <Link
-                id="wd-assignment-cancel-link"
-                to={`/Kanbas/Courses/${cid}/Assignments`}
-              >
-                Cancel
-              </Link>
-            </button>
+              Cancel
+            </Link>
           </div>
         </div>
       </>

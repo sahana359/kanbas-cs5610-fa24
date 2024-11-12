@@ -14,6 +14,11 @@ export default function Assignments() {
   const { cid } = useParams();
   const {assignments} = useSelector((state: any) => state.assignmentReducer) || [];
   const dispatch = useDispatch();
+  const handleDelete = (assignmentId: any) => {
+    if (window.confirm("Are you sure you want to delete this assignment?")) {
+      dispatch(deleteAssignment(assignmentId));
+    }
+  };
   return (
     <div id="wd-assignments">
       <AssignmentControls/>
@@ -72,7 +77,7 @@ export default function Assignments() {
                     </p>
                   </div>
                   <div>
-                    <FaTrash className="text-danger me-2 mb-1" onClick={() => {dispatch(deleteAssignment(assignment._id))}}/>
+                    <FaTrash className="text-danger me-2 mb-1" onClick={() => {handleDelete(assignment._id)}}/>
                     <GreenCheckmark />
                     <button className="btn btn-lg btn-transparent me-2 float-end">
                       <IoEllipsisVertical className="fs-4" />

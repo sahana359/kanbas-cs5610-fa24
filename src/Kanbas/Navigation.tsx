@@ -13,7 +13,6 @@ export default function KanbasNavigation() {
     { label: "Inbox", path: "/Kanbas/Inbox", icon: FaInbox },
     { label: "Labs", path: "/Labs", icon: LiaCogSolid },
   ];
-
   return (
     <div
       id="wd-kanbas-navigation"

@@ -1,5 +1,4 @@
 import { Link, useParams } from "react-router-dom";
-import * as db from "../../Database";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addAssignment } from "./reducer";
